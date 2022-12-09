@@ -1,6 +1,4 @@
 body{
-    font-size: 1.2rem;
-    /*font-family: 'Noto Sans', sans-serif;*/
     font-family: 'Oswald', sans-serif;
     padding: 0;
     margin: 0;
@@ -8,31 +6,49 @@ body{
 
 .menu{
     background-color: #333;
-    top: 10px;
-    bottom: 50px;
 }
 
 .menu_ul{
     display: inline;
     list-style: none;
     margin: 0;
-    padding: 50px 50px;
 }
 
 .menu_li{
     display: inline-block;
-    margin: 0;
 }
 
 .menu_link{
     
     text-decoration: none;
+    text-align: center;
     color: aliceblue;
-    padding: 20px 30px;
 }
 
 .menu_link:hover{
     height: auto;
     background-color: aquamarine;
     color: #fff;
+}
+
+@media screen and (max-width: 650px) {
+    .menu_ul{
+        padding: 0;
+    }
+    .menu_li{
+        margin-right: -3px;
+        display: inline-block;
+        text-align: center;
+        width: 50%;
+    }
+    .menu_link{
+        display: list-item;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .menu_li{
+        width: 100%;
+    }
+    
 }
